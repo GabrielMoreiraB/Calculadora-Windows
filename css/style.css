@@ -1,0 +1,99 @@
+
+
+body{
+    background-image: url(../img/fundo.svg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-calc{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-calc{
+    padding: .2em;
+}
+
+.header-calc-1, .header-calc-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.icons-header-1, .icons-header-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header-calc-2{
+    padding: 1em 0;
+}
+
+.header-calc-2 > h2{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#operations{
+    text-align: right;
+    padding: 1em; 
+}
+
+#current-operation{
+    padding-top: 1em;
+    font-size: 2em;
+    overflow-wrap: break-word;
+    min-height: 1.9em;
+}
+
+#previus-operation{
+    font-size: 1.2em;
+    padding-top: 1em;
+    color: rgb(237, 234, 234);
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+button{
+    cursor: pointer;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: (4, 1fr);
+    gap: 3px;
+}
+
+.operator{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.number{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.operator, .number, .equal{
+    padding: 1em;
+}
+
+.equal{
+    background-color:#622356 ;
+}
+
+.img-delete{
+    width: 30px;
+}
+
+.g > img{
+    width: 40px;
+}
