@@ -97,3 +97,11 @@ button{
 .g > img{
     width: 40px;
 }
+
+.del{
+    background-image: url(../img/delete.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 0.001em;
+    font-weight: 100;
+}
