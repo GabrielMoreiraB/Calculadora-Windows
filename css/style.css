@@ -44,6 +44,10 @@ body{
     padding: .2em;
 }
 
+.header-calc-1{
+    padding: 1em;
+}
+
 .header-calc-1, .header-calc-2 {
     display: flex;
     align-items: center;
