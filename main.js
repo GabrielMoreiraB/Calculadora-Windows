@@ -117,3 +117,34 @@ buttons.forEach(button =>{
 
     })
 })
+
+
+const iconCalculator = document. querySelector('.icon-calc');
+const containerCalculator = document.querySelector('.glass');
+
+
+iconCalculator.addEventListener('click', () =>{
+    containerCalculator.classList.toggle('hidden')
+})
+
+
+async function getBackgroundQuerie(){
+    //chave unica do usuário, para outro projeto devemos gerar outra no site do unsplash.com, é gratuito 
+    const CLIENT_ID = 'l-NQDu9pSBDCqSgjvIS_M821jxj13sIfOFTUk7iiz-Y'
+    const randomIndex = Math.floor(Math.random() * 10) 
+
+    const imag = await fetch(`https://api.unsplash.com/search/photos?query=wallpaper&order_by=relevant&page=1&orientation=landscape&client_id=${CLIENT_ID}`);
+    const imagConvert = await imag.json();
+    const imgChosen = await imagConvert.results[randomIndex].urls.regular;
+    return imgChosen
+}
+
+
+async function changeBackground (){
+    const body = document.querySelector('body');
+    const imagChosen = await getBackgroundQuerie();
+    body.style.background = await `url('${imagChosen}') no-repeat center center`
+    body.style.backgroundSize = "cover"
+}
+
+changeBackground ()
