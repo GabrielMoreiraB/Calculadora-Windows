@@ -3,13 +3,18 @@
 body{
     background: url(../img/fundo.svg);
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     height: 100vh;
     width: 100vw;
     position: relative;
     transition: .5s;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
 }
 
 .icon-calc{
@@ -161,4 +166,21 @@ button{
     background: #ffffff30;
     backdrop-filter: blur(10px);
 
+}
+
+footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.5em 1em;
+    
+}
+
+footer > a{
+    transition: .5s;
+}
+
+footer > a:hover{
+    color: rgb(135, 129, 129);
 }
