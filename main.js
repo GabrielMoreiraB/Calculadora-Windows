@@ -41,6 +41,10 @@ function processOperations(operation){
         updateScreen(operationValue, operation, previus, current)
         break;
         case "/":
+            if(current == 0){
+                alert('impossivel dividir por 0')
+                return
+            }
         operationValue = previus  /  current
         updateScreen(operationValue, operation, previus, current)
         break;
