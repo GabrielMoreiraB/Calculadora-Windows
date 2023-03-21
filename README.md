@@ -12,8 +12,8 @@ Nosso site conta com uma calculadora totalmente funcional, um ícone para minimi
 
 
 * **Versão** - 
-![alt text](https://github.com/GabrielMoreiraB/Site-Cave29/blob/main/img/readme/1%20pc.png)
-![alt text](https://github.com/GabrielMoreiraB/Site-Cave29/blob/main/img/readme/1%20pc.png)
+![alt text](https://github.com/GabrielMoreiraB/Calculadora-Windows/blob/main/img/img%20completo.png)
+![alt text](https://github.com/GabrielMoreiraB/Calculadora-Windows/blob/main/img/img%202.png)
 
 
 Esse projeto foi construido utilizando as seguntes ferramentas:
